@@ -21,7 +21,7 @@ export default defineConfig({
         name: "tldr InBrowser.App",
         short_name: "tldr",
         description:
-          "tldr InBrowser.App is an offline-capable PWA for tldr-pages. Fully runs in your browser. Zero API latency.",
+          "tldr HackScripts is a repository of hacking scripts based on tldr provided by SecSI.",
         theme_color: "#ffffff",
         icons: [
           {

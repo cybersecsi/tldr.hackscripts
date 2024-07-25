@@ -4,7 +4,7 @@
       <template #icon>
         <n-icon :component="Devices" />
       </template>
-      Browse By Platforms
+      Browse By Domain
     </n-button>
   </n-dropdown>
 </template>
@@ -19,15 +19,10 @@ import { useRouter } from "vue-router";
 
 const router = useRouter();
 const platforms = [
-  "common",
-  "linux",
-  "osx",
-  "windows",
-  "android",
-  "sunos",
-  "freebsd",
-  "netbsd",
-  "openbsd",
+  "network",
+  "dns",
+  "bruteforce",
+  "web"
 ];
 
 const options = platforms.map((platform) => ({

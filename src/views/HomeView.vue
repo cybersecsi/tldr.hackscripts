@@ -22,7 +22,7 @@ useHead({
     {
       name: "description",
       content:
-        "tldr InBrowser.App is an offline-capable PWA for tldr-pages. Fully runs in your browser. Zero API latency.",
+        "tldr hackscripts is the hackbook in tldr-pages format provided by SecSI.",
     },
   ],
   link: [

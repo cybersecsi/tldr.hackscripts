@@ -21,7 +21,7 @@ export async function searchPages(
   const pages = filterByLanguageAndPlatform(
     rawPages,
     options?.languages ?? [""],
-    options?.platforms ?? ["common"]
+    options?.platforms ?? ["network", "dns", "bruteforce", "web"]
   );
 
   // search with exact match, prefix match and any match

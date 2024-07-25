@@ -1,7 +1,7 @@
 <template>
   <div>
     <n-h1 class="h1">
-      <a href="https://tldr.inbrowser.app" target="_blank" v-if="isIframe">
+      <a href="https://secsi.io" target="_blank" v-if="isIframe">
         <SiteName />
       </a>
 
@@ -15,8 +15,7 @@
       </router-link>
     </n-h1>
     <n-h2 class="h2" v-if="!isIframe">
-      tldr InBrowser.App is an offline-capable PWA for tldr-pages. Fully runs in
-      your browser. Zero API latency.
+    tldr HackScripts is a repository of hacking scripts based on tldr provided by SecSI.
     </n-h2>
   </div>
 </template>

@@ -41,7 +41,7 @@ export class PageWrapper implements Page {
   }
 
   get githubURL(): string {
-    return `https://github.com/tldr-pages/tldr/blob/main${this.path}.md`;
+    return `https://github.com/cybersecsi/tldr-hackscripts/blob/main/tldr-main${this.path}.md`;
   }
 
   get text(): Promise<string> {

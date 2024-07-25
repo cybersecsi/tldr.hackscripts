@@ -1,6 +1,6 @@
 <template>
   <span>
-    <div class="inbrowser-app-text">InBrowser.App</div>
+    <div class="inbrowser-app-text">Hack Scripts</div>
     <div class="site-sub-name">tldr</div>
   </span>
 </template>
