@@ -1,6 +1,6 @@
 # 📝 tldr InBrowser.App
 
-https://tldr.inbrowser.app
+https://tldr.secsi.io
 
 tldr InBrowser.App is an offline-capable PWA for [tldr-pages](https://github.com/tldr-pages/tldr). Fully runs in your browser. Zero API latency.
 
@@ -23,6 +23,10 @@ tldr InBrowser.App is an offline-capable PWA for [tldr-pages](https://github.com
 $ npm run dev # Run Dev Server
 $ npm run build # Build to dist/
 ```
+
+
+This project was forked by the awesome [tldr.inbrowser.app](https://github.com/InBrowserApp/tldr.inbrowser.app)
+
 
 ## 📝 License
 
