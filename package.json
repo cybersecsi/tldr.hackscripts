@@ -1,6 +1,6 @@
 {
   "name": "tldr.inbrowser.app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "download:tldr-pages": "wget -O public/tldr-pages.zip https://github.com/tldr-pages/tldr/archive/refs/heads/main.zip",
+    "download:tldr-pages": "wget -O public/tldr-pages.zip https://github.com/cybersecsi/tldr-hackscripts/releases/download/v1.0/tldr-pages.zip",
     "build:sitemap": "node scripts/build-sitemap.js"
   },
   "dependencies": {
