@@ -5,10 +5,10 @@ export async function getText(entry: Entry): Promise<string> {
   let text = '';
   if (entry && typeof entry.getData === 'function') {
     const text = await entry.getData(new TextWriter());
+    return text;
   } 
   else {
     throw new Error('Text cannot be empty');
 
   }
-  return text;
 }
