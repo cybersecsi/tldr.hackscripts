@@ -1,6 +1,7 @@
 name: Build Site and Upload Artifact
 
 on:
+  workflow_dispatch:
   push:
   pull_request:
     branches: [ "main" ]
@@ -38,10 +39,19 @@ jobs:
 
     - name: Install dependencies
       run: pnpm install
+    - name: build artifact
+      run: pnpm run build
 
-    - run: pnpm run build
-    - uses: actions/upload-artifact@v3
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        name: dist
-        path: dist/
+          # Upload entire repository
+          path: 'dist'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+      
+ 
 
