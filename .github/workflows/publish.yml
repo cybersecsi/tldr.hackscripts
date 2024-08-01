@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   workflow_run:
-    workflows: ["build.yml"]
+    workflows: ["Build Site and Upload Artifact"]
     types:
       - completed
 
@@ -44,10 +44,6 @@ jobs:
           name: dist
           path: dist.zip
 
-
-      
-      - name: Checkout
-        uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
