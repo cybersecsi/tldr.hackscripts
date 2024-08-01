@@ -29,12 +29,20 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Download artifact 
-        uses: actions/download-artifact@v2
+      - name: Download build.xml artifact artifact
+        id: download-artifact
+        uses: dawidd6/action-download-artifact@v6
         with:
+          workflow: build.yml
+          # Optional, GitHub token, a Personal Access Token with `public_repo` scope if needed
+          # Required, if the artifact is from a different repo
+          # Required, if the repo is private a Personal Access Token with `repo` scope is needed or GitHub token in a job where the permissions `action` scope set to `read`
+          github_token: ${{secrets.GITHUB_TOKEN}}
           name: dist
           path: dist.zip
 
+
+      
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
